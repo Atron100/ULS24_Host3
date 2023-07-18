@@ -141,7 +141,7 @@
             this.tab_man.Controls.Add(this.label7);
             this.tab_man.Location = new System.Drawing.Point(4, 22);
             this.tab_man.Name = "tab_man";
-            this.tab_man.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tab_man.Padding = new System.Windows.Forms.Padding(3);
             this.tab_man.Size = new System.Drawing.Size(341, 422);
             this.tab_man.TabIndex = 0;
             this.tab_man.Text = "Manual";
@@ -205,7 +205,7 @@
             this.tab_auto.Controls.Add(this.Cmd_Start);
             this.tab_auto.Location = new System.Drawing.Point(4, 22);
             this.tab_auto.Name = "tab_auto";
-            this.tab_auto.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tab_auto.Padding = new System.Windows.Forms.Padding(3);
             this.tab_auto.Size = new System.Drawing.Size(341, 422);
             this.tab_auto.TabIndex = 1;
             this.tab_auto.Text = "Automatic";
@@ -224,7 +224,7 @@
             // sessionDurationUpDown
             // 
             this.sessionDurationUpDown.Location = new System.Drawing.Point(126, 39);
-            this.sessionDurationUpDown.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sessionDurationUpDown.Margin = new System.Windows.Forms.Padding(2);
             this.sessionDurationUpDown.Maximum = new decimal(new int[] {
             86400,
             0,
@@ -242,7 +242,7 @@
             // photoRateUpDown
             // 
             this.photoRateUpDown.Location = new System.Drawing.Point(126, 18);
-            this.photoRateUpDown.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.photoRateUpDown.Margin = new System.Windows.Forms.Padding(2);
             this.photoRateUpDown.Maximum = new decimal(new int[] {
             18000,
             0,
@@ -290,7 +290,7 @@
             this.tab_Params.Controls.Add(this.Cmd_Sens);
             this.tab_Params.Location = new System.Drawing.Point(4, 22);
             this.tab_Params.Name = "tab_Params";
-            this.tab_Params.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tab_Params.Padding = new System.Windows.Forms.Padding(3);
             this.tab_Params.Size = new System.Drawing.Size(341, 422);
             this.tab_Params.TabIndex = 2;
             this.tab_Params.Text = "Parameters";
@@ -299,7 +299,7 @@
             // imgIntegrationTimeUpDown
             // 
             this.imgIntegrationTimeUpDown.Location = new System.Drawing.Point(17, 89);
-            this.imgIntegrationTimeUpDown.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.imgIntegrationTimeUpDown.Margin = new System.Windows.Forms.Padding(2);
             this.imgIntegrationTimeUpDown.Maximum = new decimal(new int[] {
             100000000,
             0,
@@ -460,6 +460,7 @@
             this.Cmd_Sens.TabIndex = 0;
             this.Cmd_Sens.Text = "Sensor Temp";
             this.Cmd_Sens.UseVisualStyleBackColor = true;
+            this.Cmd_Sens.Click += new System.EventHandler(this.Cmd_Sens_Click);
             // 
             // Cmd_ConnectDisconnect
             // 

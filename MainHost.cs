@@ -418,5 +418,10 @@ namespace ULS24_Host
         {
 
         }
+
+        private void Cmd_Sens_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
