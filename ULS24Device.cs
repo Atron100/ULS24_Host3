@@ -639,7 +639,8 @@ namespace ULS24_Host
             {
                 if ((_bleDevice != null) && (_bleDevice.Gatt != null))
                 {
-                    _bleDevice.Gatt.Disconnect();
+                    _bleDevice.Gatt.Disconnect();                    
+                    
                 }
             }
             catch (Exception e)

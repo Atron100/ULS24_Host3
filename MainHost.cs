@@ -39,7 +39,7 @@ namespace ULS24_Host
         public MainHost()
         {
             InitializeComponent();
-            label6.Text = @"C:\";
+            label6.Text = @"D:\Work\Photos\";
             _bluetoothDevices = new List<BluetoothDevice>();
 
             Bluetooth.AdvertisementReceived += onBleDeviceDiscovered;
@@ -295,6 +295,7 @@ namespace ULS24_Host
                         if (_activeBleDevice != null)
                         {
                             _activeBleDevice.addDeviceDisconnectedHandler(onBleDeviceDisconnected);
+                            
                             Cmd_Start.Enabled = true;
                             Cmd_ConnectDisconnect.Text = "Disconnect";
                         }
@@ -322,6 +323,7 @@ namespace ULS24_Host
                     Cmd_ConnectDisconnect.Enabled = false;
                     tabControl1.Enabled = false;
                     _activeBleDevice.Disconnect();
+
                 }
                 catch (Exception ex)
                 {
@@ -330,7 +332,7 @@ namespace ULS24_Host
                 finally
                 {
                     _activeBleDevice = null;
-                    Cmd_ConnectDisconnect.Enabled = true;
+                    Cmd_ConnectDisconnect.Enabled = true;                    
                 }
             }
         }
